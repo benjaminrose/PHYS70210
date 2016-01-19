@@ -1,6 +1,6 @@
 
 
-CREATE TABLE inspect_rave (                 -- Create new table for inspection
+CREATE TABLE pipeline (                 -- Create new table for inspection
 
  SEQUENCE     double precision PRIMARY KEY,  --   SEQUENCE
  SPSPEC1                       varchar(80),  --   Spectrum name
@@ -206,6 +206,6 @@ CREATE TABLE inspect_rave (                 -- Create new table for inspection
 
 );
 
-COPY inspect_rave FROM '/Users/vplacco/Desktop/mk_inspect/rave.insp' DELIMITERS ',' CSV;
+COPY pipeline FROM '/Users/brose/Google Drive/Projects/PHYS70210/psql_intro/rave.insp' DELIMITERS ',' CSV;
 
 
